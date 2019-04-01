@@ -49,7 +49,7 @@ class AuthForm extends Component {
     const { name, password } = this.state.data
     if (!(name && password)) {
       this.setState({ error: 'Заполните обязательные поля' })
-    } else if (name != 'admin' || password != '123') {
+    } else if (name !== 'admin' || password !== '123') {
       this.setState({ error: 'Неверные данные (admin, 123)' })
     } else {
       this.setState({ error: false })

@@ -27,7 +27,7 @@ const Checkbox = styled.label`
 `
 
 export default ({record}) => {
-    const {email, username, text, id, status} = record
+    const {email, username, text, status} = record
     return (
         <TaskWrapper>
             <Checkbox><input type='checkbox' checked={status} disabled={!localStorage.getItem('access')}/> Проверено </ Checkbox>
